@@ -28,6 +28,10 @@ GEM
     activesupport (3.2.20)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
+    angular-rails-templates (0.2.0)
+      railties (>= 3.1)
+      sprockets (~> 2)
+      tilt
     arel (3.0.3)
     builder (3.0.4)
     coffee-rails (3.2.2)
@@ -48,6 +52,9 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.11.0)
+    ngannotate-rails (1.0.0)
+      execjs
+      rails (>= 3.1)
     polyglot (0.3.5)
     rack (1.4.5)
     rack-cache (1.2)
@@ -99,7 +106,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  angular-rails-templates
   coffee-rails (~> 3.2.1)
+  ngannotate-rails
   rails (= 3.2.20)
   sass-rails (~> 3.2.3)
   sqlite3

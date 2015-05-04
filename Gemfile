@@ -36,3 +36,6 @@ end
 
 # To use debugger
 # gem 'debugger'
+
+gem 'ngannotate-rails'
+gem 'angular-rails-templates'

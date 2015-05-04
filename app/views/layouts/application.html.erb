@@ -6,9 +6,18 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-<%= yield %>
+  <body ng-app="evalApp">
 
-</body>
+    <div>
+
+      <h2>1 + 1 = {{ 1 + 1}}</h2>
+
+      <div ui-view>
+          ui-view wrap
+      </div>
+
+    </div>
+
+  </body>
 </html>

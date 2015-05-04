@@ -10,4 +10,8 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require_tree .
+//= require angular/angular
+//= require angular-ui-router/release/angular-ui-router.js
+//= require angular-rails-templates
+//= require evalapp
+//= require_tree ./home/.
