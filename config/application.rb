@@ -58,5 +58,9 @@ module Eval
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # http://stackoverflow.com/a/13713753/1526027
+    config.assets.initialize_on_precompile = false
+
   end
 end

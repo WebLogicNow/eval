@@ -20,6 +20,11 @@ Eval::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+  # http://stackoverflow.com/questions/12938995/excluding-files-from-assetsprecompile-in-rails
+  # https://github.com/rharriso/bower-rails/issues/58
+  # http://stackoverflow.com/questions/12574977/rake-assetsprecompile-gives-punc-error
+  config.assets.precompile = [ Proc.new{ |path| !File.extname(path).in?(['.js', '.css', '.map', '.gzip']) }, /application.(css|js)$/ ]
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
