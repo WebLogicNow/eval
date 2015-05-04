@@ -13,5 +13,7 @@
 //= require angular/angular
 //= require angular-ui-router/release/angular-ui-router.js
 //= require angular-rails-templates
+//= require angular-resource/angular-resource
 //= require evalapp
 //= require_tree ./home/.
+//= require_tree ./values/.

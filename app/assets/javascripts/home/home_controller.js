@@ -1,6 +1,6 @@
 angular.module('evalApp')
 
-.controller('HomeCtrl', ['$scope', function($scope) {
+.controller('HomeCtrl', ['$scope', 'ValueFactory', function($scope, ValueFactory) {
 
   var _this = this;
 

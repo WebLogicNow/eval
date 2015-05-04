@@ -1,6 +1,7 @@
 angular.module('evalApp', [
   'ui.router',
-  'templates'
+  'templates',
+  'ngResource'
 ])
 
 .config([
@@ -17,5 +18,11 @@ angular.module('evalApp', [
       });
 
     $urlRouterProvider.otherwise('home');
+
+}])
+
+.run(['$rootScope', 'ValueFactory', function($rootScope, ValueFactory) {
+
+  $rootScope.ValueFactory = ValueFactory;
 
 }]);

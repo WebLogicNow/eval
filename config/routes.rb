@@ -58,4 +58,6 @@ Eval::Application.routes.draw do
 
   root to: 'application#angular'
 
+  resources :values, only: [:index]
+
 end
